@@ -1,0 +1,11 @@
+<div class="container mt-3">
+    <div class="row g-4">
+      @for (product of products; track $index) {
+          <div class="col-lg-4 col-md-6">
+              <app-card [item]="product">
+              </app-card>
+            </div>
+      }
+    </div>
+  </div>
+  

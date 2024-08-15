@@ -1,0 +1,19 @@
+
+<div class="card">
+    <img [src]="item.image" class="card-img-top d-block h-img " alt="item">
+    
+    <div class="card-body">
+
+        <span class="d-none" [id]="item.id"></span>
+        <p class="card-title fs-6 fw-medium">{{item.title.split(" ",5).join() +"..."}}</p>
+          <p class="card-text">price: {{item.price}}$</p>
+    
+          <i [class.text-warning]="round(item.rating.rate)>=1?true:false"  class="fa-solid fa-star"></i>
+          <i [class.text-warning]="round(item.rating.rate)>=2?true:false"  class="fa-solid fa-star"></i>
+          <i [class.text-warning]="round(item.rating.rate)>=3?true:false"  class="fa-solid fa-star"></i>
+          <i [class.text-warning]="round(item.rating.rate)>=4?true:false"  class="fa-solid fa-star "></i>
+          <i [class.text-warning]="round(item.rating.rate)>=5?true:false"  class="fa-solid fa-star"></i>
+        
+      
+    </div>
+  </div>
